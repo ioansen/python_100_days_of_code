@@ -175,3 +175,5 @@ cython_debug/
 
 #pycharm idea
 .idea/
+
+my-private-key.asc
