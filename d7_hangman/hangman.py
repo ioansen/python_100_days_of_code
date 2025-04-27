@@ -54,7 +54,7 @@ guessed_letters = []
 
 print_current_status(number_of_guesses_left, guessed_letters, word)
 
-while verify_end(number_of_guesses_left, guessed_letters ,word) == 1:
+while verify_end(number_of_guesses_left, guessed_letters ,word):
     
     current_guess = ask_for_letter()
 
@@ -68,5 +68,6 @@ while verify_end(number_of_guesses_left, guessed_letters ,word) == 1:
 
 if verify_end(number_of_guesses_left, guessed_letters ,word) == 0:
     print("you lost. Cheers")
+    print(f'the word was: {word}')
 else:
     print("you won. Good for you")
